@@ -96,7 +96,22 @@ const Hero: React.FC<IHero> = () => {
           </p>
 
           <div className="my-[2em] md:hidden">
-            <Button className="w-[80%] mx-auto flex items-center justify-center gap-3 ">
+          <div className="flex justify-between items-center border-2 border-slate-300/20  rounded overflow-hidden p-[20px] h-[48px] bg-white">
+              <input
+                className="p-2 text-sm text-gray-700 w-[120px]"
+                type="text"
+                placeholder="Search..."
+              />
+
+              <div className="flex items-center border-l h-auto">
+              
+                <button className="px-2 text-gray-700">
+                  <IoIosSearch size="1.5em" />
+                </button>
+              </div>
+            </div>
+
+            <Button className="w-full my-[1em] mx-auto flex items-center justify-center gap-3 ">
               <FaPlus />
               <h1>Post a Job</h1>
             </Button>
