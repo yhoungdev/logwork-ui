@@ -7,8 +7,8 @@ import Container from "../../template/container";
 const TipSection = () => {
   return (
     <Container>
-      <div className="my-20">
-        <div className="flex flex-nowrap justify-start gap-4 overflow-x-auto md:overflow-hidden">
+      <div className="  md:my-[9em]">
+        <div className="flex flex-nowrap justify-between gap-4 overflow-x-auto md:overflow-hidden">
           {BlogPosts.map((post, key) => (
             <div key={key} className=" min-w-full md:min-w-0">
               <TipsCardPanel data={post} />
