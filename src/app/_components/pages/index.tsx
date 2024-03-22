@@ -19,7 +19,6 @@ const Homepage = () => {
     <div>
       <Header />
       <Hero />
-
       <About />
       <PopularServices />
       <Information />
