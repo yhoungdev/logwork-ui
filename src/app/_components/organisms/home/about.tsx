@@ -7,7 +7,7 @@ interface Iabout {}
 const About: React.FC<Iabout> = () => {
   return (
     <Container>
-      <div className=" py-[100px] md:py-[15em]">
+      <div className=" py-[100px] md:py-[15em]" data-aos='fade-up'>
         <h3 className="font-bold text-2xl md:text-[32px]">
           Secured payment and privacy on Loggworks
         </h3>

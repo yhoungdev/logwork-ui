@@ -6,7 +6,7 @@ interface IpopularServices {}
 
 const PopularServices: React.FC<IpopularServices> = () => {
   return (
-    <div className=" py-[9em] mx-auto mb-10 py-26 bg-accent/5 px-4">
+    <div className=" py-[9em] mx-auto mb-10 py-26 bg-accent/5 px-4 " data-aos='fade-up'>
       <Container>
         <div>
           <h3 className="font-bold text-xl md:text-3xl mb-12">

@@ -7,7 +7,7 @@ const Information = () => {
   return (
     <Container>
       <div className="flex flex-col gap-[3em] md:flex-row items-center bg-white rounded-lg overflow-hidden">
-        <div className="md:w-1/2  h-[400px] md:h-[550px] overflow-hidden  flex justify-center items-center">
+        <div className="md:w-1/2  h-[400px] md:h-[550px] overflow-hidden  flex justify-center items-center"  data-aos="fade-up">
           <Image
             className="w-full bg-slate-400 rounded-lg"
             alt="service"
@@ -16,7 +16,7 @@ const Information = () => {
             src={"/assets/service-to-offer.svg"}
           />
         </div>
-        <div className="md:w-[500px] md:p-4">
+        <div className="md:w-[500px] md:p-4" data-aos='fade-right'>
           <h3 className="text-2xl md:text-4xl font-bold md:leading-[48px] mb-[18px]">
             Do you have a <br />
             service to offer?
