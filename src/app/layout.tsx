@@ -4,9 +4,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
-export const metadata: Metadata= {
+export const metadata: Metadata = {
   title: "Loggworks | Homepage",
   description: "Find reliable home service providers near you",
   icons: {
@@ -18,8 +16,7 @@ export const metadata: Metadata= {
   },
   openGraph: {
     title: "Loggworks",
-    description:
-      "Find reliable home service providers near you",
+    description: "Find reliable home service providers near you",
   },
 };
 

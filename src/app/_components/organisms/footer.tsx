@@ -6,6 +6,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Brandmark from "../atom/brandmark";
+import Button from "../atom/button";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
           <div className="col-span-2">
-            <div className="flex flex-col item w-auto mr-auto">
+            <div className="hidden md:flex flex-col item w-auto mr-auto">
               <Brandmark />
               <div className="flex flex-col gap-[16px] mt-[33px] w-auto mr-auto">
                 <button className="border-2 rounded border-gray-300 text-gray-300 py-[7px] px-[8px]">
@@ -116,6 +117,18 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
+        <div className="flex md:hidden  flex-col item w-full ">
+          <div className="flex flex-col w-full gap-[16px] mt-[33px] mr-auto">
+            <Button className="w-full">
+              Become a Professional
+            </Button>
+            <button className="border-2 rounded border-gray-300 text-gray-300 py-[7px] px-[8px]">
+              Post a job
+            </button>
+          </div>
+        </div>
+       
 
         <div className="border-t border-gray-700 py-8 mt-8 flex flex-col md:flex-row justify-between items-center text-white text-sm">
           <p>©Copyright 2024 loggworks Ltd. All Rights Reserved</p>
