@@ -1,4 +1,3 @@
-'use client';
 import React from "react";
 import Header from "../organisms/header";
 import Hero from "../organisms/hero";
@@ -12,6 +11,7 @@ import MobileDownload from "../organisms/home/mobileDownload";
 import ReviewsSlider from "../organisms/home/reviewSlider";
 import PopularServices from "../organisms/home/popularServices";
 import About from "../organisms/home/about";
+
 
 const Homepage = () => {
 

@@ -2,9 +2,9 @@ import { aboutData } from "@/app/utils/data";
 import AboutCardPanel from "../../shared/aboutCardPanel";
 import Container from "../../template/container";
 
-interface Iabout {}
+interface IAbout {}
 
-const About: React.FC<Iabout> = () => {
+const About: React.FC<IAbout> = () => {
   return (
     <Container>
       <div className=" py-[100px] md:py-[15em]" data-aos='fade-up'>

@@ -5,12 +5,12 @@ import AOS from 'aos';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-  }, [])
+		AOS.init({
+			offset: 200,
+			duration: 500,
+			easing: 'ease-in-sine',
+			delay: 100,
+		  });
+	}, [])
   return <Homepage />;
 }
