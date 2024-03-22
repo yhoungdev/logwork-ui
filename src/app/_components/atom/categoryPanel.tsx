@@ -12,7 +12,7 @@ const CategoryPanel = ({
   assetRepo: string;
 }) => {
   return (
-    <div className="bg-white  rounded-lg max-w-full lg:max-w-[400px] w-full [&:hover_.art]:scale-[1.5]">
+    <div className="bg-white  rounded-lg max-w-full lg:max-w-[291px] w-full [&:hover_.art]:scale-[1.5]">
       <div
         className="bg-black w-full h-[150px]
        rounded-lg overflow-clip flex items-center
