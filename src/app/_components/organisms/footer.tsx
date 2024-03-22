@@ -38,7 +38,7 @@ const Footer = () => {
                 <a href="/contact-us">Contact Us</a>
               </li>
               <li>
-                <a href="/help-faqs">Help & FAQ's</a>
+                <a href="/help-faqs">Help & FAQ&quot;s</a>
               </li>
               <li>
                 <a href="/user-agreement">User Agreement</a>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <a href="/contact-us">Contact Us</a>
               </li>
               <li>
-                <a href="/help-faqs">Help & FAQ's</a>
+                <a href="/help-faqs">Help & FAQ&quot;s</a>
               </li>
               <li>
                 <a href="/user-agreement">User Agreement</a>

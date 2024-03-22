@@ -24,7 +24,7 @@ const reviews = [
     author: "Alisha Reed",
   },
   {
-    text: "As a professional, Loggworks has connected me with clients I wouldn't have found otherwise. It's a game-changer.",
+    text: "As a professional, Loggworks has connected me with clients I wouldn't have found otherwise. Its a game-changer.",
     author: "Carlos Gutierrez",
   },
 ];
@@ -89,7 +89,7 @@ const ReviewsSlider: React.FC<IreviewsSLider> = () => {
           >
             <div className="my-4">
               <p className="opacity-[0.7]">
-                "{reviews[currentReviewIndex].text}"
+                {reviews[currentReviewIndex].text}
               </p>
               <b>{reviews[currentReviewIndex].author}</b>
             </div>
