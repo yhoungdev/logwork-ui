@@ -2,22 +2,27 @@ import React from "react";
 import TipsCardPanel from "../../shared/tipCardPanel";
 import Button from "../../atom/button";
 import { BlogPosts } from "@/app/utils/data";
+import Container from "../../template/container";
 
 const TipSection = () => {
   return (
-    <div className="container my-[5em]">
-      <div className="grid grid-cols-3 gap-4">
-        {BlogPosts.map((_, key) => (
-          <TipsCardPanel data={_} key={key} />
-        ))}
-      </div>
-
-      <center>
-        <div className="my-[3em]">
-          <Button className="!px-10">Checkout Our Blog</Button>
+    <Container>
+      <div className="my-20">
+        <div className="flex flex-nowrap justify-start gap-4 overflow-x-auto md:overflow-hidden">
+          {BlogPosts.map((post, key) => (
+            <div key={key} className=" min-w-full md:min-w-0">
+              <TipsCardPanel data={post} />
+            </div>
+          ))}
         </div>
-      </center>
-    </div>
+
+        <center>
+          <div className="my-[3em]">
+            <Button className="!px-10">Checkout Our Blog</Button>
+          </div>
+        </center>
+      </div>
+    </Container>
   );
 };
 

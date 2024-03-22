@@ -5,23 +5,23 @@ const TipsCardPanel = ({
   data,
 }: {
   data: {
-    title: string;
-    imgSrc: string;
+    title?: string;
+    imgSrc?: string;
   };
 }) => {
   return (
     <div className="col-span-1 bg-white rounded-lg max-w-full lg:max-w-[400px] w-full [&:hover_.art]:scale-[1.7]">
-      <div className="bg-black w-full h-[150px] rounded-lg overflow-hidden">
-        <Image
-          className="w-full h-full scale-[1.5] art transition-all"
-          src={data.imgSrc}
-          width={200}
-          height={150}
-          alt={data.title}
-        />
-      </div>
+      <div
+        className="bg-black w-full h-[150px] rounded-lg overflow-hidden"
+        style={{
+          backgroundImage: `url(${data.imgSrc})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      ></div>
       <div className="py-2">
-        <p className="text-xs text-gray-500">How To's</p>
+        <p className="text-xs text-gray-500">How To</p>
         <h2 className="text-lg font-semibold">{data.title}</h2>
         <p className="text-sm text-gray-700 mt-1">
           Loggworks helps you get special offers, connect you to top vetted and

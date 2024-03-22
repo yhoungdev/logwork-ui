@@ -26,3 +26,9 @@ body .mx-def {
 body .my-def {
   margin-inline: var(--def-margin);
 }
+
+@media screen and (max-width: 560px) {
+    .cover_mobile {
+      width: 100%;
+    }
+}

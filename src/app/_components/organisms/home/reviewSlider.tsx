@@ -11,11 +11,22 @@ const reviews = [
     text: "Using Loggworks made finding home services a breeze; posting jobs for free saved me money and hassle.",
     author: "George Harrison",
   },
-  { text: "Review 1 text", author: "Author 1" },
-  { text: "Review 2 text", author: "Author 2" },
-  { text: "Review 3 text", author: "Author 3" },
-  { text: "Review 4 text", author: "Author 4" },
-  { text: "Review 5 text", author: "Author 5" },
+  {
+    text: "The variety of professionals on Loggworks is impressive. Found a great landscaper who did wonders for my yard!",
+    author: "Samantha Bloom",
+  },
+  {
+    text: "Loggworks' customer service is top-notch. They helped me resolve an issue with a contractor in less than a day.",
+    author: "Derek Shaw",
+  },
+  {
+    text: "I appreciate the user-friendly interface of Loggworks. It makes navigating and posting jobs really simple.",
+    author: "Alisha Reed",
+  },
+  {
+    text: "As a professional, Loggworks has connected me with clients I wouldn't have found otherwise. It's a game-changer.",
+    author: "Carlos Gutierrez",
+  },
 ];
 
 const ReviewsSlider: React.FC<IreviewsSLider> = () => {
@@ -106,19 +117,19 @@ const ReviewsSlider: React.FC<IreviewsSLider> = () => {
               <FaChevronRight />
             </span>
           </div>
-          
+
           <div className="flex justify-center md:hidden my-[1.4em] gap-[12px] translate-y-[6px]">
-              {reviews.map((review, index) => (
-                <span
-                  key={index}
-                  className={`${
-                    index === currentReviewIndex
-                      ? "bg-accent w-[30px]"
-                      : "w-[6px] bg-accent/20"
-                  } rounded-full h-[6px] transition-all`}
-                ></span>
-              ))}
-            </div>
+            {reviews.map((review, index) => (
+              <span
+                key={index}
+                className={`${
+                  index === currentReviewIndex
+                    ? "bg-accent w-[30px]"
+                    : "w-[6px] bg-accent/20"
+                } rounded-full h-[6px] transition-all`}
+              ></span>
+            ))}
+          </div>
 
           <div className="flex md:hidden justify-between">
             <div className=" grid place-items-center col-span-1">
@@ -143,19 +154,16 @@ const ReviewsSlider: React.FC<IreviewsSLider> = () => {
               </span>
             </div>
           </div>
-          
-          <div className="my-5">
-              <div className="w-full h-[100px] md:hidden "
-                style={
-                  {
-                    backgroundImage: 'url(assets/trustScore.svg)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    
-                  }
-                }>
 
-              </div>
+          <div className="my-5">
+            <div
+              className="w-full h-[100px] md:hidden "
+              style={{
+                backgroundImage: "url(assets/trustScore.svg)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+              }}
+            ></div>
           </div>
         </div>
       </div>
