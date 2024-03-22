@@ -28,7 +28,7 @@ body .my-def {
 }
 
 @media screen and (max-width: 560px) {
-    .cover_mobile {
-      width: 100%;
-    }
+  .cover_mobile {
+    width: 100%;
+  }
 }

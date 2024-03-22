@@ -57,7 +57,10 @@ const Header = () => {
           <a href="#" className="hover:text-black relative">
             Professional
           </a>
-          <a href="#" className=" hover:text-black text-black  border-b-4 border-black pb-3">
+          <a
+            href="#"
+            className=" hover:text-black text-black  border-b-4 border-black pb-3"
+          >
             Consumer
           </a>
         </div>
@@ -102,10 +105,10 @@ const Header = () => {
           </div>
 
           <Button>
-           <div className="flex items-center gap-3">
-           <FaPlus />
-            Post a job
-          </div>
+            <div className="flex items-center gap-3">
+              <FaPlus />
+              Post a job
+            </div>
           </Button>
         </div>
       </div>
