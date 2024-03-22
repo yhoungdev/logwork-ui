@@ -3,11 +3,13 @@ import { IoIosPin, IoIosSearch } from "react-icons/io";
 import Image from "next/image";
 import Button from "../atom/button";
 import Container from "../template/container";
+import Partners from "../molecule/home/partners";
 interface IHero {}
 
 const Hero: React.FC<IHero> = () => {
   return (
-    <div
+  <div>
+      <div
       className="  py-[9em]  text-center md:text-left md:h-[80vh] w-full flex flex-col md:flex-col relative"
       style={{
         background: ` #F9F8FB`,
@@ -24,7 +26,7 @@ const Hero: React.FC<IHero> = () => {
          object-cover object-right  w-[50%]"
       />
       <div className="grid  md:grid-cols-3 container w-full relativ z-[3] ">
-        <div className=" hidden col-span-2 w-full h-full   md:flex flex-col items-center justify-center  ">
+        <div className=" hidden col-span-2 w-full h-full    md:flex flex-col items-center justify-center  ">
           <h1 className=" text-2xl md:text-[52px] font-bold md:leading-[64px] ">
             Find reliable home service providers near you
           </h1>
@@ -33,7 +35,7 @@ const Hero: React.FC<IHero> = () => {
             Loggworks connect homeowners to genuine and reliable service
             providers who provide easy-to-book and hassle-free services.
           </p>
-          <div className="hidden md:flex gap-3 flex-wrap w-[100%] py-4">
+          <div className="hidden md:flex gap-3 flex-wrap  mr-[5em] ml-0 py-4 ">
             <span className="flex  items-center gap-3 whitespace-nowrap">
               <FaRegCheckSquare className="text-accent" />
               <span className="">100% cost-free job postings</span>
@@ -101,7 +103,10 @@ const Hero: React.FC<IHero> = () => {
           </div>
         </div>
       </Container>
+     
     </div>
+    <Partners/> 
+  </div>
   );
 };
 

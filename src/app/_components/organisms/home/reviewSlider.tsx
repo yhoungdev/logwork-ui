@@ -87,7 +87,7 @@ const ReviewsSlider: React.FC<IreviewsSLider> = () => {
               items-center
              justify-center text-center col-span-4 px-4 gap-[32px]"
           >
-            <div className="my-4">
+            <div className="my-4 md:w-[60%]">
               <p className="opacity-[0.7]">
                 {reviews[currentReviewIndex].text}
               </p>

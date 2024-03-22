@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       "colors": {
         accent: '#2FA500',
-        default_text: "#4B4B4B"
+        default_text: "#4B4B4B",
+        accentBg: "#fbf9fa"
       },
       container: {
         center: true, 
