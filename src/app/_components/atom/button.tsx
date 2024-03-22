@@ -7,7 +7,7 @@ interface IButton {
 const Button: FC<IButton> = ({ children, className }: IButton) => {
   return (
     <button
-      className={`mt-4 bg-accent
+      className={` bg-accent
       text-white py-3 px-4 rounded-md
       hover:bg-accent/70 transition-colors
       font-medium ${className}`}

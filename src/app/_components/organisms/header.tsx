@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import Navlink from "../atom/navlink";
 import { PopularServicesData, aboutData } from "@/app/utils/data";
+import Button from "../atom/button";
 
 const Header = () => {
   return (
@@ -56,7 +57,7 @@ const Header = () => {
           <a href="#" className="hover:text-black relative">
             Professional
           </a>
-          <a href="#" className=" hover:text-black">
+          <a href="#" className=" hover:text-black text-black  border-b-4 border-black pb-3">
             Consumer
           </a>
         </div>
@@ -65,7 +66,7 @@ const Header = () => {
         className="container md:flex justify-between 
         items-center border
           hidden 
-         border-slate-400/20 h-[64px]"
+         border-slate-400/20 h-[64px] "
       >
         <nav className="flex items-center gap-[56px] ">
           <Navlink href="#" label="Home" isActive />
@@ -90,7 +91,7 @@ const Header = () => {
           />
         </nav>
 
-        <div className="flex gap-7">
+        <div className="flex gap-7 items-center">
           <div className="flex flex-col gap-1 items-center">
             <FaRegQuestionCircle className="opacity" />
             <span className="text-xs font-bold">Help</span>
@@ -100,10 +101,12 @@ const Header = () => {
             <span className="text-xs font-bold">Account</span>
           </div>
 
-          <button className="flex p-2 px-4 gap-2 text-sm rounded text-white items-center justify-center bg-accent">
-            <FaPlus />
+          <Button>
+           <div className="flex items-center gap-3">
+           <FaPlus />
             Post a job
-          </button>
+          </div>
+          </Button>
         </div>
       </div>
     </div>
